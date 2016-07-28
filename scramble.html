@@ -29,8 +29,11 @@
 
             // prompt the user to guess the original word when given the scrambled word
 
-            var guess = window.prompt('Guess the original word for this scrambled word. ' + randomScramble)
-            console.log(Guess);
+            var guess = window.prompt('Guess the original word for this scrambled word. ' + randomScramble);
+            guess = guess.toLowerCase();
+            console.log(guess);
+            guess = guess.trim();
+            console.log(guess);
 
             // If the user guesses wrong, tell them they were wrong and the right word.
             // If the user guesses the correct word, congratulate them.
